@@ -1,0 +1,115 @@
+.task-item {
+  padding: 4px;
+  color: gray;
+  display: inline;
+  padding: 25px;
+}
+.task-item:hover {
+  color: blue;
+}
+.center-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+}
+input {
+  top: 10px;
+}
+.btn {
+  border-radius: 10px;
+  height: 40px;
+  width: 70px;
+  font-size: 25px;
+  background-color: darkorange;
+  color: white;
+  border: 3px solid black;
+  margin: 20px;
+}
+.btn:hover {
+  background-color: orangered;
+}
+
+#inp {
+  left: 50%;
+  height: 50px;
+  width: 40%;
+  border-radius: 20px;
+  font-size: 25px;
+  border: 3px solid black;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+.inp:hover {
+  box-shadow: 2px 5px;
+}
+.header {
+  background-color: aqua;
+  height: auto;
+  width: auto;
+  color: red;
+  text-align: center;
+  font-family: "Libre Baskerville", serif;
+  font-size: 22px;
+  padding: 10px;
+  font-weight: 10px;
+}
+p {
+  font-family: "Lobster", serif;
+}
+img {
+  height: auto;
+  width: 100%;
+}
+@media (max-width: 600px) {
+  .header {
+    font-size: 18px;
+  }
+  img {
+    width: 80px;
+  }
+}
+.material-symbols-outlined {
+  color: gold;
+}
+ul{
+  padding: 0;
+  margin: 0;
+  max-width: 90%;
+  margin: auto;
+}
+ul li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+  font-size: 22px;
+  padding: 10px;
+  word-wrap: break-word;
+}
+@media (max-width: 600px) {
+  ul li {
+    font-size: 18px; /* Reduce font size for small screens */
+  }
+  .task-item {
+    padding: 10px;
+  }
+}
+ul li::before {
+  position: absolute;
+  content: "";
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+  background-image: url(./unchecked.png);
+  background-size: cover;
+  background-position: center;
+  left: 10px;
+  top: 28%;
+}
+ul li.checked {
+  text-decoration: line-through;
+}
+ul li.checked::before {
+  background-image: url(./checked.png);
+}

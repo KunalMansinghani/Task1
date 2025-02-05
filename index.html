@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" href="./style.css" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My First project</title>
+
+    <!-- FOR GOOGLE FONTS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link class="task-item"
+      href="https://fonts.googleapis.com/css2?family=Arvo:ital,wght@0,400;0,700;1,400;1,700&family=DM+Serif+Display:ital@0;1&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Lobster&family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Pacifico&family=Playwrite+IN:wght@100..400&family=Zilla+Slab:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- FOR CROSS SIGN -->
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=cancel"
+    />
+  </head>
+  <body>
+    <div class="header">
+      <h1>Making a Bucket List</h1>
+      <img src="./bucket.png" alt="" />
+      <p>
+        Bucket list helps prioritize goals and aspirations, providing a clear
+        direction for personal growth and meaningful experiences.<br />
+        It inspires action and fosters a sense of accomplishment as items are
+        checked off, enriching life with memorable achievements.
+      </p>
+    </div>
+    <div>
+      <div class="center-container">
+        <input type="text" id="inp" />
+        <button class="btn" onclick="addTask()">ADD</button>
+      </div>
+      <ul type="none" id="list">
+        
+      </ul>
+    </div>
+    <script src="./index.js"></script>
+  </body>
+</html>
